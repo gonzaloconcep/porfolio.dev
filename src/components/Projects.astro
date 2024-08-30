@@ -2,14 +2,21 @@
 import GitHub from "./icons/GitHub.astro"
 import NextJS from "./icons/NextJS.astro"
 import Tailwind from "./icons/Tailwind.astro"
+import AstroFramework from "./icons/AstroFramework.astro"
+import FastAPI from "./icons/FastAPI.astro"
 import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
 
 const TAGS = {
-  NEXT: {
-    name: "Next.js",
+  FAST_API: {
+    name: "FastAPI",
     class: "bg-black text-white",
-    icon: NextJS,
+    icon: FastAPI,
+  },
+  ASTRO: {
+    name: "Astro",
+    class: "bg-[#003159] text-white",
+    icon: AstroFramework,
   },
   TAILWIND: {
     name: "Tailwind CSS",
@@ -19,21 +26,21 @@ const TAGS = {
 }
 const PROJECTS = [
   {
-    title: "SVGL - A beautiful library with SVG logos",
+    title: "Categorizador de movimientos bancarios - Aplicación Web para mejorar tu salud financiera",
     description:
-      "Biblioteca de logos SVG de las marcas más populares. +10k visitas al mes. +2K svgs descargados. Creado desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://svgl.vercel.app/",
-    github: "https://github.com/pheralb/svgl",
-    image: "/projects/svgl.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+      "Categoriza tus movimientos bancarios y mejora tu salud financiera. Selecciona tu banco, elige cómo quieres categorizar tus movimientos y... ¡en tan sólo dos clics tienes todo tu mes analizad! Creada con Python, FastAPI, etc",
+    link: "https://categorizador-salud-financiera.vercel.app/",
+    image: "/projects/categorizador-movimientos-bancarios.webp",
+    tags: [TAGS.FAST_API, TAGS.TAILWIND],
   },
   {
-    title: "AdventJS - Retos de programación con JavaScript y TypeScript",
+    title: "Bocatas Manolo - Web del famoso bocadillo de Sevilla",
     description:
-      "Plataforma gratuita con retos de programación. Más de 1 millón de visitas en un mes. +50K retos completados. Creada desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://adventjs.dev",
-    image: "/projects/adventjs.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+      "Web informativa de los numerosos bocadillos que nos ofrece manolo en su local. ¡Próximamente nuevas funcionalidades para encargar tu bocadillo preferido! Creada desde cero con Astro",
+    link: "https://www.bocatasmanolo.es/",
+    github: "https://github.com/gonzaloconcep/bocatas-manolo",
+    image: "/projects/bocatas-manolo.webp",
+    tags: [TAGS.ASTRO],
   },
 ]
 ---
